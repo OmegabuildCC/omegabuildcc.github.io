@@ -48,25 +48,27 @@
   <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="/">Omegabuild</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Pages</li>
+      <li class="breadcrumb-item"><a href="/pages/">Pages</a></li>
+      <li class="breadcrumb-item active" aria-current="page">Leveling</li>
     </ol>
   </nav>
 
+
   <div class="container contentpadding">
-    <nav class="navbar justify-content-between">
-      <a class="navbar-brand"></a>
-      <form class="form-inline" id="search" action='{{ with .GetPage "/search" }}' method="get">
-        <input id="search-input" name="query" class="form-control mr-sm-2" type="text" placeholder="Search pages"
-          aria-label="Search">
-        <button class="btn btn-outline-secondary my-2 my-sm-0" value="search" type="submit">Search</button>
-      </form>
-    </nav>
-
-    <h1>List of pages</h1>
-    <li><a href="forms.html">Google Form Links</a></li>
-    <li><a href="leveling.html">Guide to Leveling System</a></li>
-
-    </p>
+    <h1>Leveling</h1>
+    <p>The leveling system is a feature used for the economy system in Omegabuild. The plugin is written by SpicyCombo,
+      and as said in the name, you are to level up when you reach the sufficient amount of omegas soon as you type the
+      command <strong>/Level up</strong>.</p>
+    <p>At each level, you are to receive perks that will affect your usage of <strong>/claim</strong> and
+      <strong>/dailybonus</strong>. The multiplier of your earnings in many minigames and events will be raised, and the
+      max bet you may have in Casino Games are also raised. You may check what perks are available to you using
+      <strong>/level perks [level]</strong> at anytime.</p>
+    <p>To see your own level, you may type <strong>/level</strong>. To see the level of others, type <strong>/level
+        [player name]</strong>. The command will show the amount of omegas needed to level up, and the amount of omegas
+      that you or the other player has.</p>
+    <p>If you are a staff member, and you hold the rank enough as said in <strong>/help level</strong>, you may use
+      <strong>/level set [player] [level]</strong> to change another player's level. Upon doing so, it will also notify
+      the player by <strong>/Inbox</strong> if they are offline, or by directly displaying a message to them.</p>
     <div class="collapse" id="collapseExample">
       <div class="card card-body">
         No.
